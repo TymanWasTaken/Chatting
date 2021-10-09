@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "chatting",
+  "version": "${version}",
+
+  "name": "Chatting",
+  "description": "HyChat but in 1.17 and better probably",
+  "authors": [
+    "Tyman"
+  ],
+  "contact": {
+    "homepage": "https://tyman.tech/",
+    "sources": "https://github.com/TymanWasTaken/Chatting"
+  },
+
+  "license": "CC BY-NC-SA 4.0",
+  "icon": "assets/chatting/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "tech.tyman.chatting.ChattingKt::init"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.8.7",
+    "fabric": "*",
+    "fabric-language-kotlin": "*",
+    "minecraft": "1.17.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  },
+  "preLaunch": [
+    "gg.essential.loader.stage0.EssentialSetupPreLaunch"
+  ]
+}
