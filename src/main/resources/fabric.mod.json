@@ -19,7 +19,13 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "tech.tyman.chatting.ChattingKt::init"
+      {
+        "adapter": "kotlin",
+        "value": "tech.tyman.chatting.Chatting"
+      }
+    ],
+    "preLaunch": [
+      "gg.essential.loader.stage0.EssentialSetupPreLaunch"
     ]
   },
   "depends": {
@@ -31,7 +37,7 @@
   "suggests": {
     "flamingo": "*"
   },
-  "preLaunch": [
-    "gg.essential.loader.stage0.EssentialSetupPreLaunch"
+  "mixins": [
+    "chatting.mixins.json"
   ]
 }

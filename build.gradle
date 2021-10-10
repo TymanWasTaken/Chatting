@@ -37,7 +37,16 @@ dependencies {
         exclude(group: "net.fabricmc")
         transitive = false
     }
-    modImplementation include('gg.essential:loader-fabric:1.0.0') {
+    modImplementation('gg.essential:vigilance-1.17.1-fabric:182') {
+        exclude(group: "net.fabricmc")
+    }
+    modImplementation('gg.essential:elementa-1.17.1-fabric:386') {
+        exclude(group: "net.fabricmc")
+    }
+    modImplementation('gg.essential:universalcraft-1.17.1-fabric:165') {
+        exclude(group: "net.fabricmc")
+    }
+    implementation include('gg.essential:loader-fabric:1.0.0') {
         transitive = false
     }
 }
