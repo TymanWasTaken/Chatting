@@ -6,6 +6,15 @@ import gg.essential.vigilance.data.PropertyType
 import java.io.File
 
 object Config : Vigilant(File("./config/chatting.toml")) {
+
+    @Property(
+        type = PropertyType.SWITCH,
+        name = "Debug mode",
+        category = "Advanced",
+        description = "Enables layout inspector, don't enable unless you know what you are doing!"
+    )
+    var debug = false
+
     @Property(
         type = PropertyType.NUMBER,
         hidden = true,
