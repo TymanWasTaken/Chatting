@@ -7,7 +7,6 @@ object ChatHelper {
     fun openChat(text: String) = EssentialAPI.getGuiUtil().openScreen(ChatScreen(text))
 
     fun Int.orDefault(default: (int: Int) -> Int): Int {
-        return if (this == -1) default.invoke(this)
-        else this
+        return if (this == -1) default.invoke(this) else this
     }
 }

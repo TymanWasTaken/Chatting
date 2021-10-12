@@ -5,9 +5,7 @@ import gg.essential.vigilance.data.Property
 import gg.essential.vigilance.data.PropertyType
 import java.io.File
 
-object Config : Vigilant(
-    File("./config/chatting.toml")
-) {
+object Config : Vigilant(File("./config/chatting.toml")) {
     @Property(
         type = PropertyType.NUMBER,
         hidden = true,
